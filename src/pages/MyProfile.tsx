@@ -6,7 +6,7 @@ function MyProfile() {
   return (
    <Box>
     <Box>
-    <Alert severity="info">If you don't provide personal information, a diet plan and a training program cannot be created.</Alert>
+    <Alert severity="info">If you do not provide personal information, a diet plan and a training program cannot be created.</Alert>
     <Profile  /> 
     </Box>
    </Box>
