@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Stack, Typography } from '@pankod/refine-mui'
+import { Box, Typography } from '@pankod/refine-mui'
 import { SplineArea, SexualTrick } from 'components'
 
 function SexualActivity() {

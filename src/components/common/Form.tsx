@@ -27,7 +27,7 @@ function Form({ type, handleFormSubmit, onFinishHandler, studentImage, handleIma
 
   const { data: user } = useGetIdentity();
 
-  const email = user?.email
+ 
 
 
   handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>, formData: FormData) => {

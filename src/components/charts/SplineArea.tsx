@@ -2,7 +2,7 @@
  * Sample for Line Series
  */
 import * as React from 'react';
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, ILoadedEventArgs, ChartTheme, LineSeries, Legend, Category, Tooltip,Highlight } from '@syncfusion/ej2-react-charts';
+import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, LineSeries, Legend, Category, Tooltip,Highlight } from '@syncfusion/ej2-react-charts';
 import { Browser } from '@syncfusion/ej2-base';
 export let data1 = [
     { x: "10min", y: 80 }, { x: "15min", y: 88 }, { x: "20min", y: 97.6 }, { x: "25min", y: 90.3 }, { x: "30min", y: 110.1 }, { x: "35min", y: 129.3 }, { x: "40min", y: 139 }, { x: "45min", y: 144 },{ x: "50min", y: 133.5 } 
