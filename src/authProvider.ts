@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { AuthProvider } from "@pankod/refine-core";
 
-import { supabaseClient } from "utility";
+import { supabaseClient, supabaseAdmin } from "utility";
 
 const authProvider: AuthProvider = {
   login: async ({ email, password }) => {
@@ -24,6 +25,21 @@ const authProvider: AuthProvider = {
     const { data, error } = await supabaseClient.auth.signUp({
       email,
       password,
+      options: {
+        data: {
+          role: "student",
+          full_name: '',
+          age: "",
+          phone: "",
+          job_Activity: "",
+          weight: null,
+          height: "",
+          gender: "",
+          illnes: "",
+          medications: "",
+          goal: ""
+        }
+      }
     });
 
     if (error) {
@@ -100,6 +116,14 @@ const authProvider: AuthProvider = {
       });
     }
   },
+  
+  
 };
+
+
+// AUTH FOR ADMIN
+
+
+
 
 export default authProvider;
