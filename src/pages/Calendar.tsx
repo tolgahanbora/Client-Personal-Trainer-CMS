@@ -6,7 +6,7 @@ import '@syncfusion/ej2-react-schedule/styles/material.css';
 
 import {Box,Typography} from '@pankod/refine-mui'
 
-import '../App.css'
+
 
 function Calendar() {
   const data = [

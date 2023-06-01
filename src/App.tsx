@@ -49,7 +49,8 @@ function App() {
       <ThemeProvider theme={LightTheme}>
         <CssBaseline />
         <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
-        <RefineSnackbarProvider>
+         <RefineSnackbarProvider>
+
           <Refine
             dataProvider={dataProvider(supabaseClient)}
             liveProvider={liveProvider(supabaseClient)}
