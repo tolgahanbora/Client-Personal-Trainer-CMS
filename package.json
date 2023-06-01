@@ -40,7 +40,7 @@
   },
   "scripts": {
     "dev": "refine start",
-    "build": "refine build",
+    "build": "node --max-old-space-size=4096 node_modules/.bin/refine build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "refine": "refine"
