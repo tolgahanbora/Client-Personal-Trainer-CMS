@@ -65,10 +65,9 @@ const Profile = ( ) => {
 
               <Box flex={1} display="flex" flexDirection="column" justifyContent="space-between" gap="30px">
                 <Stack direction="column">
-                  <Typography fontSize={22} fontWeight={600} color="#11142D">{user?.name}</Typography>
+                  <Typography fontSize={22} fontWeight={600} color="#11142D">{user?.user_metadata.fullname ? user?.user_metadata.fullname : user?.email}</Typography>
                   <Typography fontSize={16} color="#808191">Gender: {user?.user_metadata.gender}</Typography>
                   <Typography fontSize={16} color="#808191">Age: {user?.user_metadata.age}</Typography>
-                  <Typography fontSize={16} color="#808191">Job: {user?.user_metadata.job} </Typography>
                   <br/>
                   <Typography fontSize={16} color="#11142D">Weight: {user?.user_metadata.weight}</Typography>
                   <Typography fontSize={16} color="#11142D">Height: {user?.user_metadata.height}</Typography>
@@ -105,6 +104,28 @@ const Profile = ( ) => {
                       <Box display="flex" flexDirection="row" alignItems="center" gap="10px">
                         <Place sx={{ color: '#11142D' }} />
                         <Typography fontSize={14} color="#11142D">{user?.user_metadata.medications}</Typography>
+                        <Typography fontSize={14} color="#11142D"></Typography>
+                      </Box>
+                    </Stack>
+                  </Stack>
+
+                  <Stack direction="row" flexWrap="wrap" gap="20px" pb={4}>
+                    <Stack gap="15px">
+                      <Typography fontSize={14} fontWeight={500} color="#808191">job Activity</Typography>
+                      <Box display="flex" flexDirection="row" alignItems="center" gap="10px">
+                        <Place sx={{ color: '#11142D' }} />
+                        <Typography fontSize={14} color="#11142D">{user?.user_metadata.jobActivity}</Typography>
+                        <Typography fontSize={14} color="#11142D"></Typography>
+                      </Box>
+                    </Stack>
+                  </Stack>
+
+                  <Stack direction="row" flexWrap="wrap" gap="20px" pb={4}>
+                    <Stack gap="15px">
+                      <Typography fontSize={14} fontWeight={500} color="#808191">goal</Typography>
+                      <Box display="flex" flexDirection="row" alignItems="center" gap="10px">
+                        <Place sx={{ color: '#11142D' }} />
+                        <Typography fontSize={14} color="#11142D">{user?.user_metadata.goal}</Typography>
                         <Typography fontSize={14} color="#11142D"></Typography>
                       </Box>
                     </Stack>

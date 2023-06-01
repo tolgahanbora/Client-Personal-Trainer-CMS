@@ -156,9 +156,9 @@ function Form({ type, handleFormSubmit, onFinishHandler, studentImage, handleIma
                 onChange={(e) => setJobActivity(e.target.value)}
 
               >
-                <MenuItem value="LessActive"> Less active( I work at a desk, I usually sit)</MenuItem>
-                <MenuItem value="normalDegree"> Normal degree of activity ( walking, etc.)</MenuItem>
-                <MenuItem value="highlyActive"> Highly active (Heavy duty, load carrying)</MenuItem>
+                <MenuItem value="Less Active"> Less active( I work at a desk, I usually sit)</MenuItem>
+                <MenuItem value="Normal Degree"> Normal degree of activity ( walking, etc.)</MenuItem>
+                <MenuItem value="highly Active"> Highly active (Heavy duty, load carrying)</MenuItem>
               </Select>
 
             </FormControl>
@@ -300,8 +300,8 @@ function Form({ type, handleFormSubmit, onFinishHandler, studentImage, handleIma
               name="radio-buttons-group"
               onChange={(e) => setGoal(e.target.value)}
             >
-              <FormControlLabel value="loseWeight" control={<Radio />} label="Just burn fat and lose weight." />
-              <FormControlLabel value="gainMuscle" control={<Radio />} label="Gaining strength and muscle ." />
+              <FormControlLabel value="Just burn fat and lose weight." control={<Radio />} label="Just burn fat and lose weight." />
+              <FormControlLabel value="Gaining strength and muscle." control={<Radio />} label="Gaining strength and muscle ." />
             </RadioGroup>
           </FormControl>
 
